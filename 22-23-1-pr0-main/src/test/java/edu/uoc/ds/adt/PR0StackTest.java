@@ -28,8 +28,8 @@ public class PR0StackTest {
 
         this.pr0q.fillStack();
         assertEquals(Integer.valueOf(this.pr0q.getStack().size()), Integer.valueOf(this.pr0q.CAPACITY));
-
-        assertEquals(this.pr0q.clearAllStack(), new String("8 7 6 5 4 3 2 1 0 "));
+        Integer valueToCompare = 129;
+        assertEquals(this.pr0q.clearAllStack(), valueToCompare);
 
         assertEquals(Integer.valueOf(this.pr0q.getStack().size()), Integer.valueOf(0));
     }
